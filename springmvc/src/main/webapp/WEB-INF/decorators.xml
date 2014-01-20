@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/WEB-INF/decorators">
+    <excludes>  
+        <pattern>/protocols/fastpayServiceProtocol</pattern> 
+        <pattern>/protocols/paymentServiceProtocol</pattern>
+        <pattern>/protocols/fastpayProtocol</pattern>  
+        <pattern>/pages/money</pattern> 
+		<pattern>/services/*</pattern>
+    </excludes>
+	<decorator name="default" page="index.html">
+		<pattern>/*</pattern>
+	</decorator>
+</decorators>
