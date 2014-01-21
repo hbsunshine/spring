@@ -12,7 +12,6 @@ import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 public class CheckLoginInterceptor extends HandlerInterceptorAdapter{
 
 	private String returnLoginUrl;
-	private String returnMerchantLoginUrl;
 	@Override
 	public void postHandle(final HttpServletRequest request, final HttpServletResponse response, final Object handler,
 			final ModelAndView modelAndView) throws Exception {
@@ -26,7 +25,7 @@ public class CheckLoginInterceptor extends HandlerInterceptorAdapter{
 	public boolean preHandle(final HttpServletRequest request,
 			final HttpServletResponse response, final Object handler)
 					throws Exception {
-	
+	         
 			// 不需要登陆
 			return true;
 	}
@@ -56,12 +55,5 @@ public class CheckLoginInterceptor extends HandlerInterceptorAdapter{
 		this.returnLoginUrl = returnLoginUrl;
 	}
 
-	public String getReturnMerchantLoginUrl() {
-		return returnMerchantLoginUrl;
-	}
-
-	public void setReturnMerchantLoginUrl(final String returnMerchantLoginUrl) {
-		this.returnMerchantLoginUrl = returnMerchantLoginUrl;
-	}
 
 }

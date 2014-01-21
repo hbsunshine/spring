@@ -7,7 +7,7 @@
         <pattern>/pages/money</pattern> 
 		<pattern>/services/*</pattern>
     </excludes>
-	<decorator name="default" page="index.html">
+	<decorator name="default" page="">
 		<pattern>/*</pattern>
 	</decorator>
 </decorators>
